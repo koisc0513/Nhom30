@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio Cá Nhân</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -21,17 +22,19 @@
 
     <section id="about" class="section">
         <h2>Giới thiệu</h2>
-        <p>Xin chào! Tôi là một lập trình viên đam mê với công nghệ và sáng tạo.</p>
+        <p>Xin chào! Tôi là một lập trình viên với đam mê công nghệ và sáng tạo.</p>
+        <img src="profile.jpg" alt="Ảnh cá nhân">
     </section>
 
     <section id="skills" class="section">
         <h2>Kỹ năng</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Vue, Angular</li>
-            <li>Node.js, Express</li>
-            <li>Flutter, Dart</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React & Vue</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Flutter & Dart</div>
+        </div>
     </section>
 
     <section id="projects" class="section">
@@ -48,8 +51,12 @@
 
     <section id="contact" class="section">
         <h2>Liên hệ</h2>
-        <p>Email: trungnguyen4399n@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/example</p>
+        <form>
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Lời nhắn..." required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
     </section>
 
     <footer>
